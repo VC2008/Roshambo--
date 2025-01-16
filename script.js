@@ -1,6 +1,6 @@
 
   const getComputerChoice = () => {
-    const randomNumber = Math.floor(Math.random() * 3);
+    const randomNumber = Math.floor(Math.random() * 4);
     switch (randomNumber) {
       case 0:
         return 'rock';
@@ -8,6 +8,8 @@
         return 'paper';
       case 2:
         return 'scissors';
+      case 3:
+        return 'fire';
     }
   };
   const determineWinner = (userChoice, computerChoice) => {
@@ -42,45 +44,26 @@
             return 'You won!';
           }
     }
-    if (userChoice === 'snake') {
-        if (computerChoice === 'rock') {
-            return 'Computer won.';
-        } else {
+    if (userChoice === 'scissors') {
+        if (computerChoice === 'fire') {
+          return 'Computer won.';
+          } else {
             return 'You won!';
-        }
+          }
     }
-    if (userChoice === 'Human') {
-        if (computerChoice === 'rock') {
-            return 'Computer won.';
-        } else {
+    if (userChoice === 'paper') {
+        if (computerChoice === 'fire') {
+          return 'Computer won.';
+          } else {
             return 'You won!';
-        }
+          }
     }
-    if (userChoice === 'Tree') {
-        if (computerChoice === 'rock') {
-            return 'Computer won.';
-        } else {
-            return 'You won!';
-        }
-    }
-    if (userChoice === 'Wolf') {
-        if (computerChoice === 'rock') {
-            return 'Computer won.';
-        } else {
-            return 'You won!';
-        }
-    }
-    if (userChoice === 'Sponge') {
-        if (computerChoice === 'rock') {
-            return 'Computer won.';
-        } else {
-            return 'You won!';
-        }
+   
     }
     if (userChoice === 'bomb') {
         return 'You won!';
     }
-  };
+
   function playGame(userChoice){
    
       const computerChoice = getComputerChoice(); 
