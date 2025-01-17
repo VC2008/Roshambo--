@@ -1,4 +1,12 @@
 
+const getUserChoice = userInput => {
+  userInput = userInput.toLowerCase();
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') { 
+      return userInput;
+  } else {
+    console.log('Error!');
+  }
+}
   const getComputerChoice = () => {
     const randomNumber = Math.floor(Math.random() * 4);
     switch (randomNumber) {
@@ -17,26 +25,27 @@
         return 'The game is a tie!';
     }
     if (userChoice === 'rock') {
-        if (computerChoice === 'paper') {
-          return 'Computer won.';
-          } else {
-            return 'You won!';
-          }
-    }
+      if (computerChoice === 'paper') {
+        return 'Computer won.';
+        } else {
+          return 'You won!';
+        }
+  }
     if (userChoice === 'paper') {
         if (computerChoice === 'scissors') {
             return 'Computer won.';
         } else {
-            return 'You won!';
+          return 'You won!';
         }
     } 
     if (userChoice === 'scissors') {
         if (computerChoice === 'rock') {
             return 'Computer won.';
         } else {
-            return 'You won!';
+          return 'You won!';
         }
     }
+    
     if (userChoice === 'fire') {
         if (computerChoice === 'rock') {
           return 'Computer won.';
@@ -58,11 +67,64 @@
             return 'You won!';
           }
     }
-   
-    }
-    if (userChoice === 'bomb') {
+    if (userChoice === 'paper') {
+      if (computerChoice === 'snake') {
+        return 'Computer won.';
+        } else {
+          return 'You won!';
+        }
+  }
+  if (userChoice === 'snake') {
+    if (computerChoice === 'scissors') {
+      return 'Computer won.';
+      } else {
         return 'You won!';
+      }
+}
+if (userChoice === 'snake') {
+  if (computerChoice === 'rock') {
+    return 'Computer won.';
+    } else {
+      return 'You won!';
     }
+}
+if (userChoice === 'snake') {
+  if (computerChoice === 'fire') {
+    return 'Computer won.';
+    } else {
+      return 'You won!';
+    }
+}
+if (userChoice === 'human') {
+  if (computerChoice === 'fire') {
+    return 'Computer won.';
+    } else {
+      return 'You won!';
+    }
+}
+if (userChoice === 'human') {
+  if (computerChoice === 'rock') {
+    return 'Computer won.';
+    } else {
+      return 'You won!';
+    }
+}
+if (userChoice === 'human') {
+  if (computerChoice === 'scissors') {
+    return 'Computer won.';
+    } else {
+      return 'You won!';
+    }
+}
+if (userChoice === 'paper') {
+  if (computerChoice === 'human') {
+    return 'Computer won.';
+    } else {
+      return 'You won!';
+    }
+}
+    }
+   
 
   function playGame(userChoice){
    
@@ -72,5 +134,5 @@
       
       console.log(determineWinner(userChoice, computerChoice));
   };
-  playGame();
-E
+
+
