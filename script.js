@@ -1,4 +1,4 @@
-
+let introduction = prompt('Welcome to Super Roshambo! Click on any of the buttons to choose a character and battle against the computer! The game ends when one player gets a score of 3, good luck and have fun!')
 const getUserChoice = userInput => {
   userInput = userInput.toLowerCase();
   if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') { 
@@ -133,6 +133,8 @@ if (userChoice === 'paper') {
       console.log(`Computer chose: ${computerChoice}.`);
       
       console.log(determineWinner(userChoice, computerChoice));
+
   };
 
 
+  console.log(introduction)

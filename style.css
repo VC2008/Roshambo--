@@ -1,8 +1,13 @@
 div {
     margin-top: auto;
-    margin: auto;
+    margin: 2px;
+    background-color: black;
   }
   body{
     align-content: center;
     background-color: black;
+  }
+  h1{
+    text-align: center;
+    background-color: blue;
   }

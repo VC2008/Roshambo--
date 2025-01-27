@@ -16,15 +16,16 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link href="style.css">
-        <link href="script.js"
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="script.js">
     </head>
 
     <body>
+      <h1>SUPER ROSHAMBO!</h1>
         <div class="container-fluid">
 <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card text-center text-bg-light">
+                <div class="card text-center text-bg-primary">
                   <img src="." class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Player Side</h5>
@@ -36,7 +37,7 @@
               </div>
                  <!--mark-->
                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card text-center text-bg-light" >
+                    <div class="card text-center text-bg-secondary" >
                       <img src="." class="card-img-top" alt="..." />
                       <div class="card-body">
                         <h5 class="card-title">Computer Side</h5>
@@ -46,7 +47,19 @@
                   </div>
                 </div>
 
-
+<div class="col-lg-12 col-md-12 col-sm-12">
+  <div class="card text-center text-bg-success">
+    <img src="." class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Scoreboard</h5>
+      <p id="userScore">
+        .
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<!--Placeholder Required So The Website Doesn't Collapse-->
             <div class="row d-flex justify-content-center align-items-center my-3">
                 <div class="d-lg-none col-md-12">
                  <div class="card text-center">
@@ -59,8 +72,8 @@
                </div>
                 <!--mark-->
                <div class="col-lg-2 col-md-6 col-sm-12">
-                 <div class="card text-center text-bg-light">
-                   <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+                 <div class="card text-center text-bg-danger">
+                   <img src="IMGS/Fire.png" class="card-img-top" alt="..." />
                    <div class="card-body">
                      <h5 class="card-title">Fire</h5>
                     
@@ -69,9 +82,9 @@
                  </div>
                </div>
                  <!--mark-->
-               <div class="col-lg-2 col-md-6 col-sm-12 card text-bg-light">
-                 <div class="card text-center text-bg-light" >
-                   <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+               <div class="col-lg-2 col-md-6 col-sm-12">
+                 <div class="card text-center text-bg-danger" >
+                   <img src="IMGS/Snake.webp" class="card-img-top" alt="..." />
                    <div class="card-body">
                      <h5 class="card-title">Snake</h5>
                     
@@ -81,7 +94,8 @@
                </div>
                    <!--mark-->
                <div class="col-lg-2 d-none d-lg-block">
-                 <div class="card text-center text-bg-light">
+                 <div class="card text-center text-bg-danger">
+                  <img src="IMGS/TheRock.webp" class="card-img-top" alt="..." />
                    <div class="card-body">
                      <h5 class="card-title">Rock</h5>
                      
@@ -91,8 +105,8 @@
                </div>
                   <!--mark-->
                <div class="col-lg-2 col-md-6 col-sm-12">
-                 <div class="card text-center text-bg-light">
-                   <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+                 <div class="card text-center text-bg-danger">
+                   <img src="IMGS/Human.jpg" class="card-img-top" alt="..." />
                    <div class="card-body">
                      <h5 class="card-title">Human</h5>
                     
@@ -102,8 +116,8 @@
                </div>
                    <!--mark-->
                <div class="col-lg-2 col-md-6 col-sm-12">
-                 <div class="card text-center text-bg-light">
-                   <img src="https://picsum.photos/300/150" class="card-img-top
+                 <div class="card text-center text-bg-danger">
+                   <img src="IMGS/Tree.webp" class="card-img-top
                      alt="..."
                    />
                    <div class="card-body">
@@ -131,8 +145,8 @@
            </div>
             <!--mark-->
            <div class="col-lg-2 col-md-6 col-sm-12">
-             <div class="card text-center text-bg-light">
-               <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+             <div class="card text-center text-bg-danger">
+               <img src="IMGS/Sponge.png" class="card-img-top" alt="..." />
                <div class="card-body">
                  <h5 class="card-title">Sponge</h5>
                 
@@ -141,9 +155,9 @@
              </div>
            </div>
              <!--mark-->
-           <div class="col-lg-2 col-md-6 col-sm-12 card text-bg-light">
-             <div class="card text-center text-bg-light" >
-               <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+           <div class="col-lg-2 col-md-6 col-sm-12">
+             <div class="card text-center text-bg-danger" >
+               <img src="IMGS/Air.jpg" class="card-img-top" alt="..." />
                <div class="card-body">
                  <h5 class="card-title">Air</h5>
                 
@@ -153,7 +167,8 @@
            </div>
                <!--mark-->
            <div class="col-lg-2 d-none d-lg-block">
-             <div class="card text-center text-bg-light">
+             <div class="card text-center text-bg-danger">
+              <img src="IMGS/PaperCrane.jpg" class="card-img-top" alt="..." />
                <div class="card-body">
                  <h5 class="card-title">Paper</h5>
                  
@@ -163,8 +178,8 @@
            </div>
               <!--mark-->
            <div class="col-lg-2 col-md-6 col-sm-12">
-             <div class="card text-center text-bg-light">
-               <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+             <div class="card text-center text-bg-danger">
+               <img src="IMGS/Water.avif" class="card-img-top" alt="..." />
                <div class="card-body">
                  <h5 class="card-title">Water</h5>
                 
@@ -174,8 +189,8 @@
            </div>
                <!--mark-->
            <div class="col-lg-2 col-md-6 col-sm-12">
-             <div class="card text-center text-bg-light">
-               <img src="https://picsum.photos/300/150" class="card-img-top
+             <div class="card text-center text-bg-danger">
+               <img src="IMGS/Dragon.jpg" class="card-img-top
                  alt="..."
                />
                <div class="card-body">
@@ -203,8 +218,8 @@
        </div>
         <!--mark-->
        <div class="col-lg-2 col-md-6 col-sm-12">
-         <div class="card text-center text-bg-light">
-           <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+         <div class="card text-center text-bg-danger">
+           <img src="IMGS/Lightning.webp" class="card-img-top" alt="..." />
            <div class="card-body">
              <h5 class="card-title">Lightning</h5>
             
@@ -213,9 +228,9 @@
          </div>
        </div>
          <!--mark-->
-       <div class="col-lg-2 col-md-6 col-sm-12 card text-bg-light">
-         <div class="card text-center text-bg-light" >
-           <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+       <div class="col-lg-2 col-md-6 col-sm-12">
+         <div class="card text-center text-bg-danger" >
+           <img src="IMGS/Gun.jpg" class="card-img-top" alt="..." />
            <div class="card-body">
              <h5 class="card-title">Gun</h5>
             
@@ -225,7 +240,8 @@
        </div>
            <!--mark-->
        <div class="col-lg-2 d-none d-lg-block">
-         <div class="card text-center text-bg-light">
+         <div class="card text-center text-bg-danger">
+          <img src="IMGS/Scissors.webp" class="card-img-top" alt="..." />
            <div class="card-body">
              <h5 class="card-title">Scissors</h5>
             
@@ -235,8 +251,8 @@
        </div>
           <!--mark-->
        <div class="col-lg-2 col-md-6 col-sm-12">
-         <div class="card text-center text-bg-light">
-           <img src="https://picsum.photos/300/150" class="card-img-top" alt="..." />
+         <div class="card text-center text-bg-danger">
+           <img src="IMGS/Wolf.png" class="card-img-top" alt="..." />
            <div class="card-body">
              <h5 class="card-title">Wolf</h5>
              
@@ -246,8 +262,8 @@
        </div>
            <!--mark-->
        <div class="col-lg-2 col-md-6 col-sm-12">
-         <div class="card text-center text-bg-light">
-           <img src="https://picsum.photos/300/150" class="card-img-top
+         <div class="card text-center text-bg-danger">
+           <img src="IMGS/DeanDevil.webp" class="card-img-top
              alt="..."
            />
            <div class="card-body">
