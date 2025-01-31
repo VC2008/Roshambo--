@@ -1,7 +1,7 @@
 let introduction = prompt('Welcome to Super Roshambo! Click on any of the buttons to choose a character and battle against the computer! The game ends when one player gets a score of 3, good luck and have fun!')
 const getUserChoice = userInput => {
   userInput = userInput.toLowerCase();
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') { 
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') { 
       return userInput;
   } else {
     console.log('Error!');
@@ -25,116 +25,69 @@ const getUserChoice = userInput => {
         return 'The game is a tie!';
     }
     if (userChoice === 'rock') {
-      if (computerChoice === 'paper') {
+      if (computerChoice === 'paper') 
         return 'Computer won.';
-        } else {
-          return 'You won!';
-        }
   }
-    if (userChoice === 'paper') {
-        if (computerChoice === 'scissors') {
-            return 'Computer won.';
-        } else {
-          return 'You won!';
-        }
-    } 
-    if (userChoice === 'scissors') {
-        if (computerChoice === 'rock') {
-            return 'Computer won.';
-        } else {
-          return 'You won!';
-        }
-    }
-    
-    if (userChoice === 'fire') {
-        if (computerChoice === 'rock') {
-          return 'Computer won.';
-          } else {
-            return 'You won!';
-          }
-    }
-    if (userChoice === 'scissors') {
-        if (computerChoice === 'fire') {
-          return 'Computer won.';
-          } else {
-            return 'You won!';
-          }
-    }
-    if (userChoice === 'paper') {
-        if (computerChoice === 'fire') {
-          return 'Computer won.';
-          } else {
-            return 'You won!';
-          }
-    }
-    if (userChoice === 'paper') {
-      if (computerChoice === 'snake') {
-        return 'Computer won.';
-        } else {
-          return 'You won!';
-        }
-  }
-  if (userChoice === 'snake') {
-    if (computerChoice === 'scissors') {
-      return 'Computer won.';
-      } else {
-        return 'You won!';
-      }
+  if (userChoice === 'paper') {
+    if (computerChoice === 'rock') 
+      return 'User won.';
 }
-if (userChoice === 'snake') {
-  if (computerChoice === 'rock') {
+if (userChoice === 'scissors') {
+  if (computerChoice === 'rock') 
     return 'Computer won.';
-    } else {
-      return 'You won!';
-    }
 }
-if (userChoice === 'snake') {
-  if (computerChoice === 'fire') {
-    return 'Computer won.';
-    } else {
-      return 'You won!';
-    }
-}
-if (userChoice === 'human') {
-  if (computerChoice === 'fire') {
-    return 'Computer won.';
-    } else {
-      return 'You won!';
-    }
-}
-if (userChoice === 'human') {
-  if (computerChoice === 'rock') {
-    return 'Computer won.';
-    } else {
-      return 'You won!';
-    }
-}
-if (userChoice === 'human') {
-  if (computerChoice === 'scissors') {
-    return 'Computer won.';
-    } else {
-      return 'You won!';
-    }
+if (userChoice === 'rock') {
+  if (computerChoice === 'scissors') 
+    return 'User won.';
 }
 if (userChoice === 'paper') {
-  if (computerChoice === 'human') {
+  if (computerChoice === 'scissors') 
     return 'Computer won.';
-    } else {
-      return 'You won!';
-    }
+}
+if (userChoice === 'scissors') {
+  if (computerChoice === 'paper') 
+    return 'User won';
+}
+
+//Fire Options
+if (userChoice === 'paper') {
+  if (computerChoice === 'fire') 
+    return 'Computer won.';
+}
+if (userChoice === 'fire') {
+  if (computerChoice === 'paper') 
+    return 'User Won.';
+}
+
+if (userChoice === 'fire') {
+  if (computerChoice === 'rock') 
+    return 'Computer won.';
+}
+if (userChoice === 'rock') {
+  if (computerChoice === 'fire') 
+    return 'User won.';
+}
+
+if (userChoice === 'scissors') {
+  if (computerChoice === 'fire') 
+    return 'Computer won.';
+}
+if (userChoice === 'scissors') {
+  if (computerChoice === 'fire') 
+    return 'Computer won.';
 }
     }
    
 
-  function playGame(userChoice){
-   
-      const computerChoice = getComputerChoice(); 
-      console.log(`You chose: ${userChoice}.`);
-      console.log(`Computer chose: ${computerChoice}.`);
-      
-      console.log(determineWinner(userChoice, computerChoice));
-
-  };
+ const playGame = () => {
+    const userChoice = getUserChoice('paper');
+    const computerChoice = getComputerChoice(); 
+    console.log(`You chose: ${userChoice}.`);
+    console.log(`Computer chose: ${computerChoice}.`);
+    
+    console.log(determineWinner(userChoice, computerChoice));
+};
+playGame();
 
 
   console.log(introduction)

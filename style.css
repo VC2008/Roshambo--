@@ -2,11 +2,16 @@ div {
     margin-top: auto;
     margin: 2px;
     background-color: black;
-  }
-  body{
     align-content: center;
-    background-color: black;
   }
+  body {
+    padding-top: 70px;}
+  .row .flex {
+   display: inline-flex;
+   width: 100%;}
+  img {
+   width:100%;
+   min-height:100px;}
   h1{
     text-align: center;
     background-color: blue;
